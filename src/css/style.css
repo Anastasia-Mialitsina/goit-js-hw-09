@@ -39,9 +39,6 @@ input {
 input:hover {
   border-color: #000000;
 }
-input:focus::placeholder {
-  color: #2e2f42; 
-}
 label {
   font-family: var(--font-family);
   font-weight: 400;
