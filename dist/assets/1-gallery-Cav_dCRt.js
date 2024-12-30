@@ -9,4 +9,4 @@ import{S as n}from"./vendor-D0gBiHs0.js";(function(){const t=document.createElem
         />
       </a>
     </li>`).join("");s.innerHTML=l;new n(".gallery a",{captionsData:"alt",captionDelay:250});
-//# sourceMappingURL=1-gallery-uKc3wk9K.js.map
+//# sourceMappingURL=1-gallery-Cav_dCRt.js.map
