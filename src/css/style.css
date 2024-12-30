@@ -21,3 +21,60 @@
 .gallery-image:hover {
   transform: scale(1.05);
 }
+.div-form {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  background: #fff;
+}
+.feedback-form {
+  width: 360px;
+  height: 192px; 
+}
+input {
+  margin-bottom: 8px;
+  width: 360px;
+}
+input:hover {
+  border-color: #000000;
+}
+input:focus::placeholder {
+  color: #2e2f42; 
+}
+label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  width: 360px;
+}
+textarea {
+  width: 360px;
+  height: 80px;
+  resize: none;
+}
+button {
+  margin-top: 16px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+button:hover  {
+  background-color: #6C8CFF;
+  cursor: pointer;
+}
+
+
+
