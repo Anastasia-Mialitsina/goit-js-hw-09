@@ -1,17 +1,3 @@
-const formHTML = `
-  <form class="feedback-form" autocomplete="off">
-    <label>
-      Email
-      <input type="email" name="email" autofocus />
-    </label>
-    <label>
-      Message
-      <textarea name="message" rows="8"></textarea>
-    </label>
-    <button type="submit">Submit</button>
-  </form>
-`;
-
 document.getElementById("form-container").innerHTML = formHTML;
 
 const formData = {
@@ -32,9 +18,11 @@ form.addEventListener("input", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
   const savedData = localStorage.getItem("feedback-form-state");
   if (savedData) {
-    const { email, message } = JSON.parse(savedData);
-    form.email.value = email || "";
-    form.message.value = message || "";
+    const parsedData = JSON.parse(savedData);
+    formData.email = parsedData.email || "";
+    formData.message = parsedData.message || "";
+    form.email.value = formData.email;
+    form.message.value = formData.message;
   }
 });
 
@@ -49,9 +37,10 @@ form.addEventListener("submit", (event) => {
 
   console.log(formData);
   localStorage.removeItem("feedback-form-state");
+  formData.email = "";
+  formData.message = "";
   form.reset();
 });
-
 
 
 
