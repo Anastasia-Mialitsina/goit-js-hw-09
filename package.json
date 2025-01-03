@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/goit-js-hw-09/",
-    "deploy": "npm run build && gh-pages -d dist",
+    "deploy": "npm run build && cp -r dist/* ./ && git add . && git commit -m 'Deploy to GitHub Pages' && git push",
     "preview": "vite preview"
   },
   "devDependencies": {
